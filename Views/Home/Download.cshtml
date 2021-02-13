@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Download";
+}
+<h3>Введите Id файла</h3>
+@using (Html.BeginForm("Download", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="text" name="id" />
+    <br>
+    <input type="submit" value="Скачать" />
+}
